@@ -275,6 +275,17 @@ compiler.plugin('compilation',function(compilaton,callback){
 
 
 
+# webpack 注意事项
+
+注意事项：
+
+- entry为字符串时，output的filename只能指定具体名字，不能使用占位符。[name].js之类的，这个只有在不是字符串时有效。
+- entry对象是key:value
+- webpack的配置文档是不可以自定义key的。
+
+
+
+
 	
  
  
