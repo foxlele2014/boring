@@ -4,3 +4,8 @@
 //全局 git config --global user.name "your_name"
 
 //加上--global
+
+
+
+
+// 测试git reset
