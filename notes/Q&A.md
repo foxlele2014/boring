@@ -8,13 +8,13 @@
 4. [x] promise
 5. [x] require
 6. [ ] 路由的实现
-7. [ ] wireshark
+7. [x] wireshark
 8. [ ] 自动化测试（mocha、breakJs、jest）
 9. [ ] webpack打包原理、插件编写
-10. [ ] 前端安全xss、csrf
+10. [x] 前端安全xss、csrf
 11. [x] es6的特性
 12. [ ] gulp结合webpack
-13. [ ] 双向数据的绑定的实现原理
+13. [x] 双向数据的绑定的实现原理
 14. [ ] canvas、node（数据可视化方面）
 15. [ ] css3
 16. [ ] 移动端开发
@@ -33,6 +33,9 @@
 
 > [require 解读2](http://wanderyt.github.io/2017/09/06/Require-in-Node-js/)
 
+### 双向绑定
+似乎这个对于输入框（Input、select、textarea等），加了个onChange事件监听，变化的时候就修改某个值
+> [剖析Vue实现原理 - 如何实现双向绑定mvvm](https://github.com/DMQ/mvvm)
 
 ### 正则
 > [身份证正则解析](http://www.jb51.net/article/109384.htm)
@@ -82,6 +85,12 @@ call stack：这个用谷歌的工具来查看的时候，我想查看的是具�
 - 不是父子关系的组件如何传递信息
 - 改进react？
 - react事务系统？
+
+### redux
+connect 封装了下组件，让它能够读取到store。只有被connect的才能读取到store窝
+参数：mapStateToProps，mapDispatchToProps，
+得再看看他是怎么封装的先= =。又忘了。
+provider 利用了context将store传递给children，使provider里的孩子都能读取到store。
 
 
 ###  exports 、module.exports、export 、export default
