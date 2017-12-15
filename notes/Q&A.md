@@ -115,3 +115,169 @@ exports、module.exports
 文件是模块，还是对象是模块。
 
 > [Node.js模块](http://www.runoob.com/nodejs/nodejs-module-system.html)
+
+
+### jest + enzyme
+
+#### 断言库：
+expect().toBe
+
+- expect()
+
+matcher function :toBe()等
+
+- expect.extend(matcher)定义matcher
+
+``` js
+expect.extend({
+  toBeDivisibleBy(received, argument) {
+    const pass = received % argument == 0;
+    if (pass) {
+      return {
+        message: () =>
+          `expected ${received} not to be divisible by ${argument}`,
+        pass: true,
+      };
+    } else {
+      return {
+        message: () => `expected ${received} to be divisible by ${argument}`,
+        pass: false,
+      };
+    }
+  },
+});
+
+test('even and odd numbers', () => {
+  expect(100).toBeDivisibleBy(2);
+  expect(101).not.toBeDivisibleBy(2);
+});
+
+```
+
+- expect.anything()
+- expect.any(contructor)
+
+... 省略一堆
+
+- .resolves
+
+async/await
+
+- .rejects
+
+- .toBe(value) int
+
+Object.is
+
+- .toHaveBeenCalled() -> toBeCalled()
+- .toHaveBeenCalledTimes(number)
+- .toHaveBeenCalledWidth(arg1,arg2,...) -> toBeCalledWidth()
+- .toHaveBeenLastCalledWidth(arg1,arg2,...) -> lastCalledWidth()
+- .toBeCloseTo(number,numdigits)
+- .toBeDefined()
+- .toBeFalsy()
+- .toBegreaterThan(number)
+
+... 省略一堆
+
+#### mock function
+
+jest.fn() 创建一个mock function
+
+method：
+
+- mockFn.getMockName()
+- mockFn.mock.calls
+- mockFn.mock.instances
+- mockFn.mockClear()
+- mockFn.mockReset()
+- mockFn.mockRestore()
+- mockFn.mockImplementation(fn)
+
+Note: `jest.fn(implementation)` is a shorthand for `jest.fn().mockImplementation(implementation)`.
+- mockFn.mockImplementationOnce(fn)
+
+
+#### jest object
+
+
+
+
+
+
+#### API：
+- afterAll(fn)
+
+execute after all test run 
+
+if describe ,after the block test
+
+- afterEach(fn)
+
+excute after every test run 
+
+- beforeAll(fn)
+
+- beforeEach(fn)
+
+- describe(name,fn)
+
+- describe.only(name,fn) -> fdescribe(name,fn)
+
+- describe.skip(name,fn) -> xdescribe(name,fn)
+
+- require.requireActure(moduleName)
+- require.requireMock(moduleName)
+
+- test(name,fn) -> it(name,fn)
+
+return promise
+
+```js
+test('has lemon in it', () => {
+  return fetchBeverageList().then(list => {
+    expect(list).toContain('lemon');
+  });
+});
+
+```
+
+- test.only(name,fn) -> it.only(name,fn) -> fit(name,fn)
+- test.skip(name,fn)
+
+
+
+#### enzyme API
+
+- shallow rendering
+
+
+
+```js
+
+var enzyme = require('enzyme');
+var Adapter = require('enzyme-adapter-react-15');
+var JSDOM = require('jsdom').JSDOM;
+
+const dom = new JSDOM(
+  '<body><div></div><textarea></textarea></body>'
+);
+dom.window.document.querySelector('div').id = 'app';
+dom.window.document.querySelector('textarea').id = 'encryption';
+dom.window.document.querySelector('textarea').innerText = '&^$360&&**@auto-penetration-test!Slat~~';
+
+global.window = dom.window;
+global.document = global.window.document;
+global.navigator = global.window.navigator;
+console.log(dom.window.document.querySelector('textarea').id)
+enzyme.configure({ adapter: new Adapter() });
+
+```
+
+
+
+
+
+
+
+

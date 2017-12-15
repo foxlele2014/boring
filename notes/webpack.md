@@ -286,6 +286,106 @@ compiler.plugin('compilation',function(compilaton,callback){
 
 
 
+
+# 疑问
+
+dllPlugin 、commonChunkPlugin都可以抽离vendor进行打包。
+是可以只用一种吗？
+
+还有commons，对于入口文件里的。它会去打包require或者import进去的代码吗，这样子也重复了吗？？？
+（还是因为用的是同一个commonChunkPlugin，所以里边做了处理，）？？？？
+
+
+这种抽离代码，假如代码里的，如react里import了a，然后有另外一个xxx也import了a，
+这时a会被打包到里边。假如这两个东西，react和xxx是属于不同文件的，则会被打进自己的部分吗？？？
+
+
+
+两种一起用的话，代码会部分重复吗?(dll里配置的那部分，会不会在vendor里重复了呢？？？）
+
+```js
+ new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require("./manifest.base.json"),
+            name: 'dll_base'
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor",
+            minChunks: function (module) {
+                return module.context &&
+                    module.context.indexOf("node_modules") !== -1 ;
+            }
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'manifest',
+            minChunks: Infinity
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'commons',
+            chunks: baseConfig.entry,
+            minChunks: baseConfig.entry.length
+        }),
+
+```
+
+
+```js
+
+module.exports = {
+    output: {
+        path: buildPath,
+        filename: '[name].js?v=[hash]',
+        library: '[name]'
+    },
+    entry: {
+        'dll_base': vendors,
+    },
+    plugins: [
+        new webpack.DllPlugin({
+            path: path.resolve('./scripts/config/manifest.base.json'),
+            name: '[name]',
+            context: __dirname
+        })
+    ]
+}
+
+
+```
+
+- quote
+
+```html
+<script type="text/javascript" src="/js/dll_base.js"></script>   
+<script type="text/javascript" src="/js/commons.js?v=87561a073654580d3a6e"></script>
+<script type="text/javascript" src="/js/vendor.js?v=5dd3382efdc987511a13"></script>
+    
+
+```
+
+webpack有个externals的配置项，里边写入的模块，表示是排除的。
+假设在dll里配置了这些排除的模块，那么肯定会被弄成一个js文件，在common里也不会出现他们了。？？
+是否可以这样？？？
+
+不过觉得我还是得自己验证这些重复性模块被打包的问题。。。问别人看文档，都还是不如实际操作来一遍。
+
+
+> [抽离第三方库](https://github.com/superpig/blog/issues/6)
+
+> [dllPlugin存在的问题?](https://segmentfault.com/q/1010000008121331)
+
+> [ref](https://github.com/pigcan/blog/issues/1)
+
+> [ref](http://engineering.invisionapp.com/post/optimizing-webpack/)
+
+> [ref](http://dev.dafan.info/detail/331496?p=)
+
+> [ref](https://segmentfault.com/q/1010000005975720)
+
+> [ref](https://github.com/superpig/blog/issues/6)
+
+
+
+
 	
  
  
