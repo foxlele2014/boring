@@ -4,11 +4,37 @@ const path = require('path');
 const resource = 'resource';
 
 let config = {
+    /**
+     * 入口：三种形式
+     * 1.字符串（一个入口）
+     * 2.对象
+     * {
+     *  entry1:aaa.js,
+     *  entry2:bbb.js,...
+     * 3.数组[{},{},{}]
+     * }
+     * tips:占位符[name]这种是需要有key的
+     */
     entry:path.resolve('resource/app.js'),
+    /**
+     * 出口：{
+     *  path:(required),绝对路径
+     *  filename:(required)，可以使用固定名称，假如多入口的可以使用[name]
+     * }
+     */
     output:{
         path:path.resolve('public'),
         filename:'bundle.js'
     },
+    /**
+     * 
+     */
+    resolve:{
+
+    },
+    /**
+     * 模块
+     */
     module:{
         rules:[
             {
@@ -24,20 +50,34 @@ let config = {
                 exclude:'/node_modules'
             },
             {
-                test:/\.(css|less)$/,
+                test:/\.less$/,
+                use:[
+                    {
+                        loader:'style-loader'
+                    },
+                    {
+                        loader:'less-loader'
+                    }
+                ]
+            },
+            {
+                test:/\.css$/,
                 use:[
                     {
                         loader:'style-loader'
                     },
                     {
                         loader:'css-loader'
-                    },
-                    {
-                        loader:'less-loader'
                     }
                 ]
             }
         ]
+    },
+    /**
+     * 插件
+     */
+    plugin:{
+        
     }
 }
 
@@ -55,4 +95,4 @@ module.exports = config;
 //执行顺序是倒序的
 //./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js!./resource/assets/less/all.less
 
-//编译less的时候为什么是要先找less模块呢？
+//编译less的时候为什么是要先找less模块呢？(预编译，也是得找到对应的语法？)
