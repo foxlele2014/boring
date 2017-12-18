@@ -57,6 +57,12 @@ call stack：这个用谷歌的工具来查看的时候，我想查看的是具�
 
 
 
+### 路由实现
+
+> [分析react-router4原理并实现（history方法）](https://github.com/youngwind/blog/issues/109)
+
+> [分析react-router4原理并实现（hash方法） ](https://github.com/joeyguo/blog/issues/2)
+
 
 
 ### 项目：（思考方向）
