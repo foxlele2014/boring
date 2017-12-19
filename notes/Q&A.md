@@ -64,6 +64,15 @@ call stack：这个用谷歌的工具来查看的时候，我想查看的是具�
 > [分析react-router4原理并实现（hash方法） ](https://github.com/joeyguo/blog/issues/2)
 
 
+### 脚手架
+
+> [yeoman-generator](https://leozdgao.me/write-yeoman-generator/)
+
+> [之前同事写的](https://github.com/Roy9102/yo-react/blob/master/app/index.js)
+
+> [yeoman.io](http://yeoman.io/authoring/)
+
+
 
 ### 项目：（思考方向）
 
@@ -108,6 +117,10 @@ provider 利用了context将store传递给children，使provider里的孩子都�
 
 > [babel转换之后的代码长什么样](https://github.com/lcxfs1991/blog/issues/9)
 
+> [jscodeshift](https://github.com/whxaxes/blog/issues/10)
+
+> [ASTexplorer](http://astexplorer.net/)
+
 - 解析：将代码字符串解析成抽象语法树
 - 变换：对抽象语法树进行变换操作
 - 再建：根据变换后的抽象语法树再生成代码字符串
@@ -115,6 +128,8 @@ provider 利用了context将store传递给children，使provider里的孩子都�
 (感觉和模板解析很像啊）读懂下边的这个就算完成了= =。顺便可以看下别人写的模板工具
 
 > [the-super-tiny-compiler](https://github.com/thejameskyle/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js)
+
+> [实现模板引擎](https://github.com/whxaxes/blog/issues/4)
 
 exports、module.exports
 
@@ -279,6 +294,25 @@ console.log(dom.window.document.querySelector('textarea').id)
 enzyme.configure({ adapter: new Adapter() });
 
 ```
+
+
+
+### 想法
+可以做一个网页播放器吗？
+源可不可以爬数据呢？
+然后写入一个json文件里
+再读取这些文件（那怎么判断播放的进度呢？audio这个元素自带的功能，会去读取音源的总量，以及播放的进度
+(html5,css3,node(爬虫,读写文件，可以作为接口返回数据吗？，不过也不需要，写入到json文件就可以了
+
+或者写个桌面软件，读取固定文件夹的文件，（用到的知识会多一个electron）=>比如说slack，vs code，atom。
+
+node-webkit 简称 nw.js，微信小程序的官方开发工具就是用这个写的。
+
+> [electron体验](http://www.zhangxinxu.com/wordpress/2017/05/electron-node-js-desktop-application-experience/)
+
+> [文档](https://electronjs.org/docs)
+
+> [audio体验](https://github.com/whxaxes/blog/issues/8)
 
 
 

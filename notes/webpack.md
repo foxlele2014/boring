@@ -287,7 +287,11 @@ compiler.plugin('compilation',function(compilaton,callback){
 
 
 
+
+
 # 疑问
+
+> [webpack 为什么这么难用？ - Stark伟的文章 - 知乎](http://zhuanlan.zhihu.com/p/32148338)
 
 dllPlugin 、commonChunkPlugin都可以抽离vendor进行打包。
 是可以只用一种吗？
