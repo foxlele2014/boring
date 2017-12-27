@@ -15,7 +15,11 @@ let config = {
      * }
      * tips:占位符[name]这种是需要有key的
      */
-    entry:path.resolve('resource/app.js'),
+    entry:{
+        app:path.resolve('resource/app.js'),
+        test:path.resolve('resource/test.js'),
+        vendor:['react','react-dom']
+    },
     /**
      * 出口：{
      *  path:(required),绝对路径
@@ -24,7 +28,7 @@ let config = {
      */
     output:{
         path:path.resolve('public'),
-        filename:'bundle.js'
+        filename:'[name].js'
     },
     /**
      * 
@@ -56,6 +60,9 @@ let config = {
                         loader:'style-loader'
                     },
                     {
+                        loader:'css-loader'
+                    },
+                    {
                         loader:'less-loader'
                     }
                 ]
@@ -76,9 +83,47 @@ let config = {
     /**
      * 插件
      */
-    plugin:{
+    plugins:[
+        /*
+            使用了两个CommonsChunkPlugin，第一个是无效的（name不一样，然后minChuncks一样的话，相当于是一样的配置了）
+            三个配置不一样时就都每个配置都有文件出现,如：没有minChuncks，minChunck是不一样啊
+            name:chunck 名，自定义的块名，然后块最后输出的文件名是filename，若无，就用name的
+            chunck：涉及到的块，省略的话，就使用入口的数量
+            minChunks：被引用的次数
+
+
+
+            ***
+            *
+            * （http://foio.github.io/wepack-code-spliting/）
+            * (https://github.com/webpack/webpack/issues/1016#issuecomment-182093533)
+            * (http://blog.csdn.net/liangklfang/article/details/55224360)
+            * 多个模块打包之后的代码集合叫chunk
+            * chunk的类型：entry chunk ,唯一一个(包含webpack运行时的代码)
+            * normal chunk
+            * 
+         */
         
-    }
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'common',
+            minChunks:2
+
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name:['vendor'],
+            filename:'vendor.js',
+            // minChunks:function(module, count) {
+            //     return module.context && module.context.indexOf('node_modules') !== -1;
+            // }
+
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'other',
+            // chunck:2,
+            minChunks:3
+
+        }),
+    ]
 }
 
 module.exports = config;
