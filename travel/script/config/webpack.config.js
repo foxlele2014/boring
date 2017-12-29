@@ -104,6 +104,10 @@ let config = {
             * 
          */
         
+        /**
+         * While running in normal mode it's not allowed to use a non-entry chunk(vendor)
+         */
+        
         new webpack.optimize.CommonsChunkPlugin({
             name:'common',
             minChunks:2

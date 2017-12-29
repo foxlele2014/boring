@@ -4,6 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Popup from './components/popup';
+import BreadCrumbs from './components/breadcrumbs';
+
 
 class App extends React.Component{
     constructor(props) {
@@ -19,6 +21,7 @@ class App extends React.Component{
                     <div className="main-content">test</div>
                     <div className="footer">footer</div>
                     <Popup />
+                    <BreadCrumbs />
                 </div>
                 
             </div>

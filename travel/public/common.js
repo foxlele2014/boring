@@ -1429,7 +1429,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * @Author: limin
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * @Date:   2017-12-27 15:30:58
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * @Last Modified by:   limin
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @Last Modified time: 2017-12-27 16:53:35
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @Last Modified time: 2017-12-28 14:49:09
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 
@@ -1439,6 +1439,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * [header]: 头部 ，1、title定制，2、是否有关闭按钮
  * [content]:定制
  * [footer] :底部，1，是否有底部，2，底部按钮文字定制，3、底部自定义，4、按钮事件
+ * afterClose:关闭之后执行的函数
+ * 是否有需要有打开前的函数呢= =。（一般都不会吧= =。
  */
 var defaultProps = {
     className: '',
@@ -1462,6 +1464,9 @@ var defaultProps = {
         onCancel: function onCancel() {
             console.log('cancel');
         }
+    },
+    afterClose: function afterClose() {
+        console.log('close');
     }
 };
 
