@@ -347,6 +347,20 @@ stateObject存储该url对应的状态对象，title：标题（浏览器尚未�
 
 
 
+### 2017前端新技术概览
+
+- 打包工具：webpack、rollup、Parcel
+- 浏览器目前已实现的新功能：访问usb设备、通过蓝牙传输数据、分享内容到社交网站
+- 新css属性：overscroll-behavior：auto|none|contain
+- 浏览器加载模块：不能直接使用es6的import
+- webAssembly：以二进制的形式在浏览器中运行|可以以文本形式查看源码|可以将C++代码编译成 WebAssembly
+- headless chrome：可以用来UI test|网页截图|爬虫
+- a-frame/webvr.js/babylon.js与sprite.js不同
+- fastify使用了JSON schema、object pool、100%异步，
+- node LTS支持的特性async函数
+- [2017前端新技术概览](https://weekly.75team.com/activity/2017game/?from=timeline&isappinstalled=0)
+
+
 
 
 
