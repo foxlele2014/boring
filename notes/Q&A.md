@@ -326,6 +326,29 @@ node-webkit 简称 nw.js，微信小程序的官方开发工具就是用这个�
 
 
 
+### history
+
+api：
+
+`pushState(stateObject, title, url)`
+stateObject存储该url对应的状态对象，title：标题（浏览器尚未实现），url
+向浏览器的历史堆栈中push一个url以及state，并改变历史堆栈的指针
+
+`replaceState(stateObject, title, url)`
+不会改变指针，替换当前url，记录state，（这个state怎么读取= =。）
+
+事件：`onpopState`
+前进、后退发生`forward、back、go`，会改变当前指针
+
+`history.length`
+
+
+> [History API 与浏览器历史堆栈管理](http://web.jobbole.com/87227/)
+
+
+
+
+
 
 
 
