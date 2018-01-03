@@ -55,7 +55,11 @@ call stack：这个用谷歌的工具来查看的时候，我想查看的是具�
 > [用开发工具来学习this，以及闭包](http://m.php.cn/article/353143.html)
 > [JavaScript 中的执行上下文和调用栈是什么？](http://www.zcfy.cc/article/what-is-the-execution-context-amp-stack-in-javascript-by-david-shariff-4007.html)
 
+### promise
 
+> [promise 迷你小书](http://liubin.org/promises-book/)
+
+> [promise必知必会十道题](https://cnodejs.org/topic/5a014cbe235953e84e47d543)
 
 ### 路由实现
 
@@ -118,6 +122,20 @@ provider 利用了context将store传递给children，使provider里的孩子都�
 
 
 ###  exports 、module.exports、export 、export default
+
+import 的是read-only，编译时，require是动态运行时，
+
+
+- exports /module.exports /require 是commonJS规范里的
+- export 、import、export default 是es6（es2015里的）
+
+> [Node中没搞明白require和import，你会被坑的很惨](http://imweb.io/topic/582293894067ce9726778be9)
+
+> [stackoverflow -解释](https://stackoverflow.com/questions/31354559/using-node-js-require-vs-es6-import-export)
+
+> [解释-知乎](https://www.zhihu.com/question/56820346)
+
+> [exports module.exports](https://cnodejs.org/topic/5231a630101e574521e45ef8)
 
 > [exports 、module.exports、export 、export default](http://www.jianshu.com/p/076f2af97db0)
 
