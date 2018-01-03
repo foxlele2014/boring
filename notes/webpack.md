@@ -297,7 +297,7 @@ dllPlugin 、commonChunkPlugin都可以抽离vendor进行打包。
 是可以只用一种吗？
 
 还有commons，对于入口文件里的。它会去打包require或者import进去的代码吗，这样子也重复了吗？？？
-（还是因为用的是同一个commonChunkPlugin，所以里边做了处理，）？？？？
+（还是因为用的是同一个commonsChunkPlugin，所以里边做了处理，）？？？？
 
 
 这种抽离代码，假如代码里的，如react里import了a，然后有另外一个xxx也import了a，
@@ -306,6 +306,27 @@ dllPlugin 、commonChunkPlugin都可以抽离vendor进行打包。
 
 
 两种一起用的话，代码会部分重复吗?(dll里配置的那部分，会不会在vendor里重复了呢？？？）
+
+commonsChunkPlugin是在打包完成后进行代码的抽离。。所以在打包的过程中，首先遇到了dllReferencePlugin，这时把json里边引用的都不打包进去。
+
+然后打包完成了之后，进行vendor打包。（dll_base里边只包含了部分node_modules里的东西，即页面里import进去的，疑问：页面引入的如：react，这个react是在dll里边的。然后react假如引用了b，然后页面又引用了一个：ccc，假如这个ccc里也有b，那么b是怎么打包在dll_base里的，只有一个b吗？？？）
+
+然后下边这个manifest是为了让vendor的hash值不变？？？
+这个我看不太懂。。
+
+> [重点关注怎么使vendor的hash值不变](https://blog.jikexueyuan.com/33.html)
+
+
+最后commons是在上边提取完之后的前提再继续提取公共代码。。（不过webapck提取公共代码是按照模块来提取的。所以。应该写在里边的不是模块的都不能提取的，假如都写得有部分代码一样，但又不太一样的话）。。
+
+
+疑问：所以这么多个commonsChunkPlugin之后，webpack的runtime代码在哪个文件里呢。。
+
+例如只有一个commonsChunkPlugin的，它的names:['common','cccc'],
+这时它的runtime代码是在ccc里边的
+
+
+按照页面的引用情况，以及他是在最后一个里边里的，所以他也是对应最后一个，是在common.js里。
 
 ```js
  new webpack.DllReferencePlugin({
