@@ -387,6 +387,7 @@ webpack有个externals的配置项，里边写入的模块，表示是排除的�
 
 > [ref](https://github.com/superpig/blog/issues/6)
 
+> [DllPlugin](http://engineering.invisionapp.com/post/optimizing-webpack/)
 
 
 
