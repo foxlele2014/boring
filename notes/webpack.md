@@ -314,6 +314,10 @@ commonsChunkPlugin是在打包完成后进行代码的抽离。。所以在打�
 然后下边这个manifest是为了让vendor的hash值不变？？？
 这个我看不太懂。。
 
+> [caching](https://webpack.js.org/guides/caching/)
+
+> [提取webpack runtime code](https://cnodejs.org/topic/58396960c71e606e36aed1db)
+
 > [重点关注怎么使vendor的hash值不变](https://blog.jikexueyuan.com/33.html)
 
 
@@ -327,6 +331,9 @@ commonsChunkPlugin是在打包完成后进行代码的抽离。。所以在打�
 
 
 按照页面的引用情况，以及他是在最后一个里边里的，所以他也是对应最后一个，是在common.js里。
+
+
+所以下边的代码里的manifest就没有什么用处咯~~~
 
 ```js
  new webpack.DllReferencePlugin({
@@ -412,8 +419,11 @@ webpack有个externals的配置项，里边写入的模块，表示是排除的�
 
 
 
-	
- 
+理解webpack终于似乎要告一段落了。接下来就是在项目里直接实践对应的几个功能，dll、hmr、extract-css、code-split、tree-shaking。
+
+除了真的还是不太会自己写plugin之外。感觉基本都理解的差不多了。。
+
+恩恩。实践实践。加油加油~~~~
  
  
 

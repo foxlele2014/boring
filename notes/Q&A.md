@@ -10,10 +10,10 @@
 6. [ ] 路由的实现
 7. [x] wireshark
 8. [ ] 自动化测试（mocha、breakJs、jest）
-9. [ ] webpack打包原理、插件编写
+9. [x] webpack打包原理、插件编写
 10. [x] 前端安全xss、csrf
 11. [x] es6的特性
-12. [ ] gulp结合webpack
+12. [x] gulp结合webpack
 13. [x] 双向数据的绑定的实现原理
 14. [ ] canvas、node（数据可视化方面）
 15. [ ] css3
@@ -24,7 +24,7 @@
 20. [ ] websocket
 21. [x] js运行时的函数栈(了解js环境的运行栈（= =。究竟什么时候就会不执行栈里边的东西了）
 22. [ ] 脚手架
-23. [ ] 2017新技术
+23. [x] 2017新技术
 24. [ ] 架构项目
 25. [ ] 使用各种全家桶之类的。如react、vue自己实现components
 
@@ -380,7 +380,18 @@ stateObject存储该url对应的状态对象，title：标题（浏览器尚未�
 - a-frame/webvr.js/babylon.js与sprite.js不同
 - fastify使用了JSON schema、object pool、100%异步，
 - node LTS支持的特性async函数
-- [2017前端新技术概览](https://weekly.75team.com/activity/2017game/?from=timeline&isappinstalled=0)
+
+> [rollup文档](https://rollupjs.org/zh)
+
+> [Parcel文档](http://www.css88.com/doc/parcel/)
+
+> [适用于移动端的新css属性overscroll-behavior](https://segmentfault.com/a/1190000012014962)
+
+> [webAssembly](http://webassembly.org/)
+
+> [用命令行运行google浏览器](https://zhuanlan.zhihu.com/p/29207391)
+
+> [2017前端新技术概览](https://weekly.75team.com/activity/2017game/?from=timeline&isappinstalled=0)
 
 
 
