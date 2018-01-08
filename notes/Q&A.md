@@ -73,7 +73,7 @@ location.key unique identifier for this location
 
 > [location.key](https://github.com/ReactTraining/history/issues/76) 
 
-
+> [react-router 原理](http://zhenhua-lee.github.io/react/history.html)
 
 > [分析react-router4原理并实现（history方法）](https://github.com/youngwind/blog/issues/109)
 
