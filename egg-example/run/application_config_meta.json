@@ -1,0 +1,244 @@
+{
+  "keys": "/Users/Roy/Documents/limin/timeisgone/egg-example/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/Roy/Documents/limin/timeisgone/egg-example/config/config.default.js",
+    "mapping": {
+      ".tpl": "/Users/Roy/Documents/limin/timeisgone/egg-example/config/config.default.js"
+    },
+    "root": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view/config/config.default.js"
+  },
+  "news": {
+    "pageSize": "/Users/Roy/Documents/limin/timeisgone/egg-example/config/config.default.js",
+    "serverUrl": "/Users/Roy/Documents/limin/timeisgone/egg-example/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-static/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "name": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "version": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "description": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "main": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "test": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "dev": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "license": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "strict": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "depth": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "env": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "level": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxAge": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+    "logging": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "port": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "responseTimeout": "/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg/config/config.default.js"
+  }
+}

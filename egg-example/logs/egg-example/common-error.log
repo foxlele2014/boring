@@ -1,0 +1,83 @@
+2018-01-11 17:09:34,270 ERROR 14193 [-/127.0.0.1/-/5ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from /Users/Roy/Documents/limin/timeisgone/egg-example/app/view
+    at Map.resolve (/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 14193
+hostname: bogon
+
+2018-01-11 17:13:41,377 ERROR 14541 [-/undefined/-/5041ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":4,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"hacker-news.firebaseio.com:443:::::::::":3},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:488:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:283:5)
+name: 'ConnectionTimeoutError'
+requestId: 1
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5022, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+headerSent: true
+pid: 14541
+hostname: bogon
+
+2018-01-11 17:13:43,378 ERROR 14541 [-/undefined/-/5008ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":4,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"hacker-news.firebaseio.com:443:::::::::":2},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:488:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:283:5)
+name: 'ConnectionTimeoutError'
+requestId: 2
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5007, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+headerSent: true
+pid: 14541
+hostname: bogon
+
+2018-01-11 17:13:44,279 ERROR 14541 [-/undefined/-/5009ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":4,"createSocketErrorCount":0,"closeSocketCount":3,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"hacker-news.firebaseio.com:443:::::::::":1},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:488:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:283:5)
+name: 'ConnectionTimeoutError'
+requestId: 3
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5008, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+headerSent: true
+pid: 14541
+hostname: bogon
+
+2018-01-11 17:13:44,913 ERROR 14541 [-/127.0.0.1/-/5005ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":4,"createSocketErrorCount":0,"closeSocketCount":4,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}})
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/urllib/lib/urllib.js:735:15)
+    at ontimeout (timers.js:488:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:283:5)
+name: 'ConnectionTimeoutError'
+requestId: 4
+data: undefined
+path: '/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22'
+status: -2
+headers: {}
+res: { status: -2, statusCode: -2, headers: {}, size: 0, aborted: false, rt: 5004, keepAliveSocket: false, data: undefined, requestUrls: [ 'https://hacker-news.firebaseio.com/v0/topstories.json' ], timing: null, remoteAddress: '35.201.97.85', remotePort: '' }
+pid: 14541
+hostname: bogon
+

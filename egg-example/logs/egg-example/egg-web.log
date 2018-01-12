@@ -1,0 +1,53 @@
+2018-01-11 17:04:14,565 INFO 13769 [egg:logger] init all loggers with options: {"dir":"/Users/Roy/Documents/limin/timeisgone/egg-example/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-01-11 17:04:14,605 INFO 13769 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-01-11 17:04:14,605 INFO 13769 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-01-11 17:04:14,710 INFO 13769 [egg-static] starting static serve /public/ -> /Users/Roy/Documents/limin/timeisgone/egg-example/app/public
+2018-01-11 17:04:14,715 INFO 13769 [egg-security] use csrf middleware
+2018-01-11 17:04:14,717 INFO 13769 [egg-security] use methodnoallow middleware
+2018-01-11 17:04:14,719 INFO 13769 [egg-security] use noopen middleware
+2018-01-11 17:04:14,721 INFO 13769 [egg-security] use nosniff middleware
+2018-01-11 17:04:14,724 INFO 13769 [egg-security] use xssProtection middleware
+2018-01-11 17:04:14,726 INFO 13769 [egg-security] use xframe middleware
+2018-01-11 17:04:14,729 INFO 13769 [egg-security] use dta middleware
+2018-01-11 17:04:14,729 INFO 13769 [egg-security] compose 7 middlewares into one security middleware
+2018-01-11 17:04:14,769 INFO 13769 [egg-watcher:app] watcher start success
+2018-01-11 17:09:22,992 INFO 14193 [egg:logger] init all loggers with options: {"dir":"/Users/Roy/Documents/limin/timeisgone/egg-example/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-01-11 17:09:23,030 INFO 14193 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-01-11 17:09:23,030 INFO 14193 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-01-11 17:09:23,150 INFO 14193 [egg-static] starting static serve /public/ -> /Users/Roy/Documents/limin/timeisgone/egg-example/app/public
+2018-01-11 17:09:23,155 INFO 14193 [egg-security] use csrf middleware
+2018-01-11 17:09:23,157 INFO 14193 [egg-security] use methodnoallow middleware
+2018-01-11 17:09:23,159 INFO 14193 [egg-security] use noopen middleware
+2018-01-11 17:09:23,160 INFO 14193 [egg-security] use nosniff middleware
+2018-01-11 17:09:23,162 INFO 14193 [egg-security] use xssProtection middleware
+2018-01-11 17:09:23,164 INFO 14193 [egg-security] use xframe middleware
+2018-01-11 17:09:23,165 INFO 14193 [egg-security] use dta middleware
+2018-01-11 17:09:23,165 INFO 14193 [egg-security] compose 7 middlewares into one security middleware
+2018-01-11 17:09:23,206 INFO 14193 [egg-watcher:app] watcher start success
+2018-01-11 17:10:37,615 INFO 14318 [egg:logger] init all loggers with options: {"dir":"/Users/Roy/Documents/limin/timeisgone/egg-example/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-01-11 17:10:37,661 INFO 14318 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-01-11 17:10:37,661 INFO 14318 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-01-11 17:10:37,830 INFO 14318 [egg-static] starting static serve /public/ -> /Users/Roy/Documents/limin/timeisgone/egg-example/app/public
+2018-01-11 17:10:37,838 INFO 14318 [egg-security] use csrf middleware
+2018-01-11 17:10:37,842 INFO 14318 [egg-security] use methodnoallow middleware
+2018-01-11 17:10:37,844 INFO 14318 [egg-security] use noopen middleware
+2018-01-11 17:10:37,846 INFO 14318 [egg-security] use nosniff middleware
+2018-01-11 17:10:37,849 INFO 14318 [egg-security] use xssProtection middleware
+2018-01-11 17:10:37,851 INFO 14318 [egg-security] use xframe middleware
+2018-01-11 17:10:37,853 INFO 14318 [egg-security] use dta middleware
+2018-01-11 17:10:37,853 INFO 14318 [egg-security] compose 7 middlewares into one security middleware
+2018-01-11 17:10:37,903 INFO 14318 [egg-watcher:app] watcher start success
+2018-01-11 17:10:51,495 INFO 14318 [egg-view-nunjucks] loading templates from ["/Users/Roy/Documents/limin/timeisgone/egg-example/app/view"]
+2018-01-11 17:13:34,860 INFO 14541 [egg:logger] init all loggers with options: {"dir":"/Users/Roy/Documents/limin/timeisgone/egg-example/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-01-11 17:13:34,910 INFO 14541 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-01-11 17:13:34,910 INFO 14541 [egg-schedule]: register schedule /Users/Roy/Documents/limin/timeisgone/egg-example/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-01-11 17:13:35,077 INFO 14541 [egg-static] starting static serve /public/ -> /Users/Roy/Documents/limin/timeisgone/egg-example/app/public
+2018-01-11 17:13:35,088 INFO 14541 [egg-security] use csrf middleware
+2018-01-11 17:13:35,091 INFO 14541 [egg-security] use methodnoallow middleware
+2018-01-11 17:13:35,094 INFO 14541 [egg-security] use noopen middleware
+2018-01-11 17:13:35,096 INFO 14541 [egg-security] use nosniff middleware
+2018-01-11 17:13:35,098 INFO 14541 [egg-security] use xssProtection middleware
+2018-01-11 17:13:35,099 INFO 14541 [egg-security] use xframe middleware
+2018-01-11 17:13:35,099 INFO 14541 [egg-security] use dta middleware
+2018-01-11 17:13:35,099 INFO 14541 [egg-security] compose 7 middlewares into one security middleware
+2018-01-11 17:13:35,145 INFO 14541 [egg-watcher:app] watcher start success

@@ -27,6 +27,7 @@
 23. [x] 2017新技术
 24. [ ] 架构项目
 25. [ ] 使用各种全家桶之类的。如react、vue自己实现components
+26. [ ] egg/koa框架了解使用
 
 ### 观察者模式
 事件驱动的都是这类模式，
@@ -129,6 +130,8 @@ provider 利用了context将store传递给children，使provider里的孩子都�
 
 import 的是read-only，编译时，require是动态运行时，
 
+export 的模块是会一直存在的，不会die。（[tree-shaking](http://2ality.com/2015/12/webpack-tree-shaking.html))
+
 
 - exports /module.exports /require 是commonJS规范里的
 - export 、import、export default 是es6（es2015里的）
@@ -170,6 +173,8 @@ exports、module.exports
 
 
 ### jest + enzyme
+
+> [使用jest+enzyme进行react项目测试 - 测试手法篇](http://echizen.github.io/tech/2017/02-12-jest-enzyme-method)
 
 #### 断言库：
 expect().toBe
@@ -301,7 +306,9 @@ test('has lemon in it', () => {
 
 #### enzyme API
 
-- shallow rendering
+- shallow rendering(reactWrapper react树结构
+- mount rendering（reactWrapper，包含子组件的）
+- render rendering （element，
 
 
 
@@ -326,6 +333,12 @@ enzyme.configure({ adapter: new Adapter() });
 
 ```
 
+
+> [difference between render mount/render](https://github.com/airbnb/enzyme/issues/465)
+
+
+Snapshots有什么作用 = =。
+当有不同的输入时 ，就有不同的展示。
 
 
 ### 想法
@@ -392,6 +405,21 @@ stateObject存储该url对应的状态对象，title：标题（浏览器尚未�
 > [用命令行运行google浏览器](https://zhuanlan.zhihu.com/p/29207391)
 
 > [2017前端新技术概览](https://weekly.75team.com/activity/2017game/?from=timeline&isappinstalled=0)
+
+
+
+### js解析
+
+> [浏览器](https://www.zybuluo.com/yangfch3/note/671516)
+
+> [nodejs](https://cnodejs.org/topic/55a4b2123ecc81b621bba8c7)
+
+> [浏览器内核](http://www.cnblogs.com/zichi/p/5116764.html)
+
+
+### 不错的题目
+
+> [手势密码](https://www.h5jun.com/post/75team-star-handlock.html)
 
 
 
