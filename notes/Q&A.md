@@ -9,7 +9,7 @@
 5. [x] require
 6. [ ] 路由的实现
 7. [x] wireshark
-8. [x] 自动化测试（mocha、breakJs、jest）（实践过jest了，只是大概知道怎么写了而已 = = ）
+8. [x] 自动化测试（mocha、breakJs、jest）（实践过jest了，只是大概知道怎么写了而已 = =。这个测试modal感觉有点坑。 ）
 9. [x] webpack打包原理、插件编写
 10. [x] 前端安全xss、csrf
 11. [x] es6的特性
