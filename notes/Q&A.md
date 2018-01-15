@@ -105,26 +105,30 @@ location.key unique identifier for this location
 
 - state和props
 - jsx
-- class组件、function组件
-- 生命周期函数
+- class组件、function组件（有状态和无状态）
+- 生命周期函数（componentDidMount这个生命周期有点特别= =。
 - shouldComponentUpdate？
 - setState
 - 循环里加上key
 
 > [key 理解](http://taobaofed.org/blog/2016/08/24/react-key/)
 
-- setState可以接受函数作为参数吗？
+- setState可以接受函数作为参数吗？（setState接收一个object，只要函数返回了object数据就没问题）
 - HoC higher-order component ？
 - Fiber
 - 不是父子关系的组件如何传递信息
 - 改进react？
 - react事务系统？
+- 在constructor里bind，还是在使用的时候再bind，这两种方法有什么区别？
+- 一般在各种事件里，如onChange、onClick里不要使用匿名函数，因为每次update都会重新渲染一个匿名函数进行绑定。（不过我觉得，一般很少会更新这些对应的按钮吧。不更新按钮的话，应该就不会渲染啊。。传给这些函数的参数改变应该也不会影响啊。
 
 ### redux
 connect 封装了下组件，让它能够读取到store。只有被connect的才能读取到store窝
 参数：mapStateToProps，mapDispatchToProps，
 得再看看他是怎么封装的先= =。又忘了。
 provider 利用了context将store传递给children，使provider里的孩子都能读取到store。
+(这里主要是有一个函数，这个函数是获取store，利用context，
+然后它啥也没做，直接返回了children，）
 
 
 ###  exports 、module.exports、export 、export default

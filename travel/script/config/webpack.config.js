@@ -18,7 +18,7 @@ let config = {
     entry:{
         app:path.resolve('resource/app.js'),
         test:path.resolve('resource/test.js'),
-        vendor:['react','react-dom']
+        // vendor:['react','react-dom']
     },
     /**
      * 出口：{
@@ -47,7 +47,7 @@ let config = {
                     {
                         loader:'babel-loader',
                         options:{
-                            presets:['babel-preset-env','babel-preset-react']
+                            presets:['env','react']
                         }
                     }
                 ],
@@ -108,25 +108,25 @@ let config = {
          * While running in normal mode it's not allowed to use a non-entry chunk(vendor)
          */
         
-        new webpack.optimize.CommonsChunkPlugin({
-            name:'common',
-            minChunks:2
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name:'common',
+        //     minChunks:2
 
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name:['vendor'],
-            filename:'vendor.js',
+        // }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name:['vendor'],
+        //     filename:'vendor.js',
             // minChunks:function(module, count) {
             //     return module.context && module.context.indexOf('node_modules') !== -1;
             // }
 
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name:'other',
-            // chunck:2,
-            minChunks:3
+        // }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name:'other',
+        //     // chunck:2,
+        //     minChunks:3
 
-        }),
+        // }),
     ]
 }
 
