@@ -32,6 +32,20 @@
 
 ### 观察者模式
 事件驱动的都是这类模式，
+一对多？
+
+> [观察者模式](http://zcfy.cc/article/javascript-observer-publish-subscribe-pattern)
+
+### 偏函数|柯里化
+定义：
+
+<b>应用：</b>将函数应用于参数，以得到返回值的过程。
+
+<b>偏函数应用：</b>将函数应用于其部分参数的过程。返回的偏函数在之后使用。也就是说，一个函数接收一个有多个参数的函数，返回一个需要比较少参数的函数。偏函数将一到多个参数在内部固定，然后返回新函数，返回的函数接收剩余的参数完成函数的应用。
+
+<b>柯里化：</b> 输入一个有多个参数的函数， 返回一个只接收单个参数的函数。
+
+> [偏函数|柯里化](http://zcfy.cc/article/curry-or-partial-application-javascript-scene-medium)
 
 ### require
 
@@ -81,6 +95,8 @@ location.key unique identifier for this location
 
 > [分析react-router4原理并实现（hash方法） ](https://github.com/joeyguo/blog/issues/2)
 
+> [ 有个视频，原理](https://tylermcginnis.com/react-router-philosophy-introduction/)
+
 
 
 ### 脚手架
@@ -112,6 +128,8 @@ location.key unique identifier for this location
 - 循环里加上key
 
 > [key 理解](http://taobaofed.org/blog/2016/08/24/react-key/)
+
+> [react diff](http://zcfy.cc/article/performance-calendar-raquo-react-8217-s-diff-algorithm)
 
 - setState可以接受函数作为参数吗？（setState接收一个object，只要函数返回了object数据就没问题）
 - HoC higher-order component ？
