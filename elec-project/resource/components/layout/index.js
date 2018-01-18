@@ -10,7 +10,8 @@
  */
 
 import React from 'react';
-import Nav from './route';
+import Nav from '../nav';
+import Routers from '../../route';
 
 export default class Layout extends React.Component {
     constructor(props) {
@@ -21,7 +22,9 @@ export default class Layout extends React.Component {
         return (
             <div className="layout-wrapper">
                 <Nav />
-                <div className=""></div>
+                <div className="layout-content">
+                    <Routers />
+                </div>
             </div>
         )
     }

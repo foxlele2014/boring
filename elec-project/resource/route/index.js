@@ -1,12 +1,26 @@
-/*
-* @Author: limin
-* @Date:   2017-12-29 18:26:50
-* @Last Modified by:   limin
-* @Last Modified time: 2018-01-08 16:10:26
-*/
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    browserHistory,
+    Route,
+    Link
+} from 'react-router-dom';
+import { routes } from './routes.js';
 
 /**
- * 使用react-router创建路由导航
+ * bundle.js:418 Uncaught Error: A <Router> may have only one child element
  */
+const Routers = () => {
+    return (
+        <Router>
+            <React.Fragment>
+                {routes.map((opt, i) => {
+                    const key = Object.keys(opt)[0];
+                    return <Route key={i} path={key} component={opt[key]} />;
+                })}
+            </React.Fragment>
+        </Router>
+    );
+};
 
-import React from 'react';
+export default Routers;

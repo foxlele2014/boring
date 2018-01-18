@@ -10,21 +10,51 @@ const path = require('path');
 
 const assets = '/resource/assets';
 
-export default = {
-    entry:path.resolve(__dirname,'/resource/renderer.js'),
-    output:{
-        filename:'bundle.js',
-        path:path.resolve(__dirname,'public')
+const config = {
+    entry: path.resolve('resource/renderer.js'),
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve('public')
     },
-    resolve:{
-
+    resolve: {
+        modules: ['node_modules'],
+        extensions: ['.js', '.json', '.jsx', '.less'],
+        alias: {
+            '@config': 'aaaa'
+        }
     },
-    module:{
-        rules:[
-            {}
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                //这里是仅仅吗
+                exclude: [path.resolve('node_modules')],
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['env', 'react']
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'less-loader'
+                    }
+                ]
+            }
         ]
     },
-    plugins:[
+    plugins: []
+};
 
-    ]
-}
+module.exports = config;
