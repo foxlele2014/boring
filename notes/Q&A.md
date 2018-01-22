@@ -21,7 +21,7 @@
 17. [x] 跨域
 18. [x] 浅拷贝和深拷贝
 19. [x] 正则
-20. [ ] websocket
+20. [ ] websocket，localstorage
 21. [x] js运行时的函数栈(了解js环境的运行栈（= =。究竟什么时候就会不执行栈里边的东西了）
 22. [ ] 脚手架
 23. [x] 2017新技术
@@ -29,6 +29,7 @@
 25. [ ] 使用各种全家桶之类的。如react、vue自己实现components
 26. [ ] egg/koa框架了解使用
 27. [ ] 在浏览器输入url之后发生了什么（主要是看一本书就好了，不过之前看了一部分，涉及到ip之类的那部分= =我就有点懵了，之前的网络的知识都忘了）
+28. [ ] generator 和 async/await的区别
 
 ### 观察者模式
 事件驱动的都是这类模式，
@@ -46,6 +47,13 @@
 <b>柯里化：</b> 输入一个有多个参数的函数， 返回一个只接收单个参数的函数。
 
 > [偏函数|柯里化](http://zcfy.cc/article/curry-or-partial-application-javascript-scene-medium)
+
+
+### generator
+
+> [generator](http://www.ruanyifeng.com/blog/2015/05/thunk.html)
+
+> [generator](http://es6.ruanyifeng.com/#docs/generator)
 
 ### require
 
@@ -97,6 +105,8 @@ location.key unique identifier for this location
 
 > [ 有个视频，原理](https://tylermcginnis.com/react-router-philosophy-introduction/)
 
+> [关于history](https://zhuanlan.zhihu.com/p/20799258?refer=jscss)
+
 
 
 ### 脚手架
@@ -131,10 +141,12 @@ location.key unique identifier for this location
 
 > [react diff](http://zcfy.cc/article/performance-calendar-raquo-react-8217-s-diff-algorithm)
 
+> [高阶组件](https://segmentfault.com/a/1190000004598113)
+
 - setState可以接受函数作为参数吗？（setState接收一个object，只要函数返回了object数据就没问题）
-- HoC higher-order component ？
+- HoC higher-order component ？（组件再封装，让它可以获取到更多的属性）
 - Fiber
-- 不是父子关系的组件如何传递信息
+- 不是父子关系的组件如何传递信息（如兄弟组件，父子组件传递信息也是通过props，定义操作类的，
 - 改进react？
 - react事务系统？
 - 在constructor里bind，还是在使用的时候再bind，这两种方法有什么区别？
