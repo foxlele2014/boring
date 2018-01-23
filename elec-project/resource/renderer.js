@@ -4,7 +4,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import Layout from './components/layout/index.js';
+import Layout from './components/layout/';
 import store from './store.js';
 
 const App =() => {
@@ -14,7 +14,5 @@ const App =() => {
         </Provider>
     );
 };
-
-console.log(App);
 
 ReactDOM.render(<App />,document.getElementById('app'));

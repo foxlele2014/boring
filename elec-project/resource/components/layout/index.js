@@ -2,16 +2,11 @@
 * @Author: limin
 * @Date:   2017-12-29 18:24:27
 * @Last Modified by:   limin
-* @Last Modified time: 2017-12-29 18:31:02
+* @Last Modified time: 2018-01-23 14:40:06
 */
 
-/**
- * 
- */
-
 import React from 'react';
-import Nav from '../nav';
-import Routers from '../../route';
+import Routers from '../../route/';
 
 export default class Layout extends React.Component {
     constructor(props) {
@@ -19,13 +14,11 @@ export default class Layout extends React.Component {
     }
 
     render() {
+        const { children } = this.props;
         return (
             <div className="layout-wrapper">
-                <Nav />
-                <div className="layout-content">
-                    <Routers />
-                </div>
+                <Routers />
             </div>
-        )
+        );
     }
 }

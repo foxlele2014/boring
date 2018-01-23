@@ -12,6 +12,20 @@
   * key:value
     [{route:component}]
   */
+ import React from 'react';
+ 
+const Home = () => {
+    return <div className="test">Home</div>;
+};
+
+const About = () => {
+    return <div className="about">About</div>;
+};
+
+const Topic = () => {
+    return <div className="topic">topic</div>;
+};
+
 export const routes = [
     {
         '/': Home
@@ -63,16 +77,4 @@ export const reducers = (state = model, action) => {
         default:
             return state;
     }
-};
-
-const Home = () => {
-    return <div className="test">Home</div>;
-};
-
-const About = () => {
-    return <div className="about">About</div>;
-};
-
-const Topic = () => {
-    return <div className="topic">topic</div>;
 };

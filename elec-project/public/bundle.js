@@ -3383,16 +3383,21 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.reducers = exports.model = exports.routes = undefined;
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+var _react = __webpack_require__(0);
 
-/**
- * 每个页面的路由自己配置，不在统一的文件里边修改增加。
- * 如在pages/index/index.js
- * 增加index.js 用来配置路由，
- * 这个可以连同路由，modal,reducer，action,component一起配置
- * 使用node的fs来读取文件，所以可以使用babel的预处理（在编译过程期间完成）
- */
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } /**
+                                                                                                                                                                                                     * 每个页面的路由自己配置，不在统一的文件里边修改增加。
+                                                                                                                                                                                                     * 如在pages/index/index.js
+                                                                                                                                                                                                     * 增加index.js 用来配置路由，
+                                                                                                                                                                                                     * 这个可以连同路由，modal,reducer，action,component一起配置
+                                                                                                                                                                                                     * 使用node的fs来读取文件，所以可以使用babel的预处理（在编译过程期间完成）
+                                                                                                                                                                                                     */
 
 //TODO 预处理 、读取
 
@@ -3400,6 +3405,32 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   * key:value
     [{route:component}]
   */
+
+
+var Home = function Home() {
+    return _react2.default.createElement(
+        "div",
+        { className: "test" },
+        "Home"
+    );
+};
+
+var About = function About() {
+    return _react2.default.createElement(
+        "div",
+        { className: "about" },
+        "About"
+    );
+};
+
+var Topic = function Topic() {
+    return _react2.default.createElement(
+        "div",
+        { className: "topic" },
+        "topic"
+    );
+};
+
 var routes = exports.routes = [{
     '/': Home
 }, {
@@ -3412,7 +3443,7 @@ var routes = exports.routes = [{
  * store
  */
 
-var modal = exports.modal = {
+var model = exports.model = {
     home: {
         test: '111'
     },
@@ -3427,10 +3458,9 @@ var modal = exports.modal = {
 /**
  *
  */
-var actions = exports.actions = {};
 
 var reducers = exports.reducers = function reducers() {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : modal;
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : model;
     var action = arguments[1];
 
     switch (action.type) {
@@ -3450,30 +3480,6 @@ var reducers = exports.reducers = function reducers() {
     }
 };
 
-var Home = function Home() {
-    return React.createElement(
-        'div',
-        { className: 'test' },
-        'Home'
-    );
-};
-
-var About = function About() {
-    return React.createElement(
-        'div',
-        { className: 'about' },
-        'About'
-    );
-};
-
-var Topic = function Topic() {
-    return React.createElement(
-        'div',
-        { className: 'topic' },
-        'topic'
-    );
-};
-
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -3491,9 +3497,9 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRedux = __webpack_require__(61);
 
-var _index = __webpack_require__(88);
+var _layout = __webpack_require__(88);
 
-var _index2 = _interopRequireDefault(_index);
+var _layout2 = _interopRequireDefault(_layout);
 
 var _store = __webpack_require__(117);
 
@@ -3505,14 +3511,12 @@ var App = function App() {
     return _react2.default.createElement(
         _reactRedux.Provider,
         { store: _store2.default },
-        _react2.default.createElement(_index2.default, null)
+        _react2.default.createElement(_layout2.default, null)
     );
 }; // This file is required by the index.html file and will
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-
-console.log(App);
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
 
@@ -22615,11 +22619,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _nav = __webpack_require__(89);
-
-var _nav2 = _interopRequireDefault(_nav);
-
-var _route = __webpack_require__(116);
+var _route = __webpack_require__(89);
 
 var _route2 = _interopRequireDefault(_route);
 
@@ -22633,12 +22633,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @Author: limin
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @Date:   2017-12-29 18:24:27
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @Last Modified by:   limin
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Last Modified time: 2017-12-29 18:31:02
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Last Modified time: 2018-01-23 14:40:06
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-/**
- * 
- */
 
 var Layout = function (_React$Component) {
     _inherits(Layout, _React$Component);
@@ -22652,15 +22648,12 @@ var Layout = function (_React$Component) {
     _createClass(Layout, [{
         key: 'render',
         value: function render() {
+            var children = this.props.children;
+
             return _react2.default.createElement(
                 'div',
                 { className: 'layout-wrapper' },
-                _react2.default.createElement(_nav2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'layout-content' },
-                    _react2.default.createElement(_route2.default, null)
-                )
+                _react2.default.createElement(_route2.default, null)
             );
         }
     }]);
@@ -22687,49 +22680,44 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(40);
 
-var _navigation = __webpack_require__(115);
+var _nav = __webpack_require__(115);
 
-var _navigation2 = _interopRequireDefault(_navigation);
+var _nav2 = _interopRequireDefault(_nav);
+
+var _routes = __webpack_require__(48);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Nav = function Nav() {
+/**
+ * bundle.js:418 Uncaught Error: A <Router> may have only one child element
+ */
+var Routers = function Routers() {
     return _react2.default.createElement(
-        _reactRouterDom.BrowserRouter,
+        _reactRouterDom.HashRouter,
         null,
         _react2.default.createElement(
-            'div',
+            _react2.default.Fragment,
             null,
-            _react2.default.createElement(
-                'ul',
-                null,
-                _navigation2.default.map(function (opt, i) {
-                    return _react2.default.createElement(
-                        'li',
-                        { key: i },
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: opt.url },
-                            opt.name
-                        )
-                    );
-                })
-            )
+            _react2.default.createElement(_nav2.default, null),
+            _routes.routes.map(function (opt, i) {
+                var key = Object.keys(opt)[0];
+                console.log(key, opt[key]);
+                return _react2.default.createElement(_reactRouterDom.Route, { key: i, path: key, component: opt[key] });
+            })
         )
     );
 };
-// import { browserHistory } from 'react-router';
-/*
-* @Author: limin
-* @Date:   2017-12-29 18:26:50
-* @Last Modified by:   limin
-* @Last Modified time: 2018-01-18 14:35:00
-*/
+
 /**
- * 导航
+ * 1.不共用router，history会不一样吗？应该不会，都是是使用的同一个吧
+ * 2.route里的match匹配到的,hash的这种怎么匹配。它也是去读取原来component里的props，并不是页面上看见的
+ * 但是现在他不会去渲染component,是因为const定义的不会提升，导致component是undefined了。
+ * 3.现在又有一个问题了，它不会去更新。去掉Switch之后它点击之后会变化了，但是第一个它一直在
+ * 4.为什么会出现这种情况呢？这时候它的默认是哪个？是第一个？那点击其他，渲染的时候，第一个不会unmount吗？
+ * 
  */
 
-exports.default = Nav;
+exports.default = Routers;
 
 /***/ }),
 /* 90 */
@@ -25700,6 +25688,127 @@ var withRouter = function withRouter(Component) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(40);
+
+var _navigation = __webpack_require__(116);
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Author: limin
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Date:   2017-12-29 18:26:50
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Last Modified by:   limin
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * @Last Modified time: 2018-01-23 14:56:25
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
+/**
+ * 导航
+ */
+
+//惊叹下，好多黑盒处理啊，例如这个react-router-dom 的BrowserRouter就已经集成了history
+// import { browserHistory } from 'react-router';
+
+
+/**
+ * https://stackoverflow.com/questions/36505404/how-to-use-react-router-with-electron
+ * Failed to execute 'pushState' on 'History': A history state object with URL 'file:///topic' cannot be created in a document with origin 'null' and URL 'file:///Users/Documents/timeisgone/elec-project/resource/index.html'.
+ * Generally speaking, you should use a <BrowserRouter> if you have a server that responds to requests and a <HashRouter> if you are using a static file server.
+ */
+
+var Nav = function (_React$Component) {
+    _inherits(Nav, _React$Component);
+
+    function Nav(props) {
+        _classCallCheck(this, Nav);
+
+        var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
+
+        _this.state = {};
+        return _this;
+    }
+
+    _createClass(Nav, [{
+        key: 'renderChildren',
+        value: function renderChildren() {
+            return _navigation2.default.map(function (opt, i) {
+                return _react2.default.createElement(
+                    'li',
+                    { key: i },
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: opt.url, replace: true },
+                        opt.name
+                    )
+                );
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _reactRouterDom.HashRouter,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        this.renderChildren()
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Nav;
+}(_react2.default.Component);
+/**
+ * li
+ * Consider adding an error boundary to your tree to customize error handling behavior.
+ * 找了好久的一个错误，是因为electron不支持browerhistory,然后就不打算用react-router-dom了。但是我
+ * 没注意看，原来react-router是没有Link这个组件的。。。。导致一直说是undefined。。。。
+ * 
+ */
+
+/**
+ * link 的使用依赖router，他需要通过this.context.router来获取到history，里边有点击事件，会使用history.replae 或者history.push
+ * 但是link是只做两件事，替换location,做history的存储操作
+ * 还有一个NavLink，加了是否active的判断
+ */
+
+/**
+ * Hash history cannot PUSH the same path; a new entry will not be added to the history stack
+ *
+ * 连续两次点击同一个url
+ * https://github.com/ReactTraining/react-router/issues/4467
+ */
+
+
+exports.default = Nav;
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 /**
  * 配置导航链接以及对应的名称（最后还是需要这个东西）
  */
@@ -25714,44 +25823,6 @@ exports.default = [{
     url: '/topic',
     name: 'TOPIC'
 }];
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(40);
-
-var _routes = __webpack_require__(48);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Routers = function Routers() {
-    return _react2.default.createElement(
-        _reactRouterDom.BrowserRouter,
-        null,
-        _react2.default.createElement(
-            _react2.default.Fragment,
-            null,
-            _routes.routes.map(function (opt, i) {
-                var key = Object.keys(opt)[0];
-                return _react2.default.createElement(_reactRouterDom.Route, { key: i, path: key, component: opt[key] });
-            })
-        )
-    );
-};
-
-exports.default = Routers;
 
 /***/ }),
 /* 117 */
