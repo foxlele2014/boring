@@ -28,7 +28,7 @@ export const routes = [
  * store
  */
 
-export const modal = {
+export const model = {
     home: {
         test: '111'
     },
@@ -43,9 +43,8 @@ export const modal = {
 /**
  *
  */
-export const actions = {};
 
-export const reducers = (state = modal, action) => {
+export const reducers = (state = model, action) => {
     switch (action.type) {
         case 'test':
             return Object.assign({}, state, {

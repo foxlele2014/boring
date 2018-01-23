@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    browserHistory,
+    Router,
     Route,
     Link
-} from 'react-router-dom';
+} from 'react-router';
+import createHistory from 'history/createHashHistory';
+
 import { routes } from './routes.js';
 
 /**
@@ -12,7 +13,7 @@ import { routes } from './routes.js';
  */
 const Routers = () => {
     return (
-        <Router>
+        <Router history={createHistory}>
             <React.Fragment>
                 {routes.map((opt, i) => {
                     const key = Object.keys(opt)[0];
