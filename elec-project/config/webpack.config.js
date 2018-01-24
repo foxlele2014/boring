@@ -10,6 +10,7 @@
  */
 
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const assets = '/resource/assets';
@@ -19,6 +20,12 @@ const config = {
     output: {
         filename: 'bundle.js',
         path: path.resolve('public')
+    },
+    devServer:{
+        hot:true,
+        contentBase:path.resolve('public'),
+        compress: true,
+        port: 9000
     },
     resolve: {
         modules: ['node_modules'],
@@ -37,8 +44,7 @@ const config = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['env', 'react'],
-                            plugin:[]
+                            presets: ['env', 'react']
                         }
                     }
                 ]
@@ -49,11 +55,24 @@ const config = {
             },
             {
                 test: /\.css$/,
-                user: [{ loader: 'style-loader!css-loader' }]
+                use: [{ loader: 'style-loader!css-loader' }]
             }
         ]
     },
-    plugins: []
+    plugins: [
+        new webpack.DefinePlugin({
+            PRODUCTION: JSON.stringify('development')
+        }),
+        new webpack.DllReferencePlugin({
+            context:__dirname,
+            manifest:require("./manifest.json")
+        }),
+        // new HtmlWebpackPlugin({
+        //     title:'elec-dictionary',
+        //     filename:'../resource/index.html',
+
+        // })
+    ]
 };
 
 module.exports = config;
