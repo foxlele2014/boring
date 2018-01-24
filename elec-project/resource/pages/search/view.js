@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-
+import AutoComplete from '@components/AutoComplete';
 import * as actions from './actions';
 
 class Search extends React.Component {
@@ -19,14 +19,7 @@ class Search extends React.Component {
         return (
             <div className="search-wrapper">
                 <div className="search-header">
-                    <input type="text" className="search-input" />
-                    <i className="search icon" />
-                    <i className="close icon" />
-                </div>
-                <div className="result-list">
-                    <ul>
-                        <li>aaa v.aaa</li>
-                    </ul>
+                    <AutoComplete />
                 </div>
                 <div className="search-content" />
                 <div className="search-tools" />

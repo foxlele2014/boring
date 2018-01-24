@@ -25,14 +25,3 @@ export default store;
     in Provider (created by App)
     in App
 */
-// export default {
-//     about: {
-//         test: false
-//     },
-//     topic: {
-//         test2: 'aaa'
-//     },
-//     home: {
-//         test: 1
-//     }
-// };

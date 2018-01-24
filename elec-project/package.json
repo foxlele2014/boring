@@ -6,9 +6,10 @@
   "scripts": {
     "start": "electron ./resource/main.js",
     "debug": "electron --debug=5858 ./resource/main.js",
-    "dev": "webpack --watch --config ./config/webpack.config.js",
-    "build": "webpack --config ./config/webpack.config.js",
-    "dll": "webpack --config ./config/webpack.dll.js"
+    "dev": "cross-env NODE_ENV=development webpack --watch --config ./config/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
+    "dll": "cross-env NODE_ENV=production webpack --config ./config/webpack.dll.js",
+    "dev-server": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js"
   },
   "repository": "",
   "keywords": [
@@ -43,6 +44,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",

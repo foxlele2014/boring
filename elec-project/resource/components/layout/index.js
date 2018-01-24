@@ -4,7 +4,7 @@
 * @Last Modified by:   limin
 * @Last Modified time: 2018-01-23 14:40:06
 */
-
+import '@assets/less/common.less';
 import React from 'react';
 import Routers from '../../route/';
 

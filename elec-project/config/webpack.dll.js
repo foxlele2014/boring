@@ -1,24 +1,37 @@
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const path = require('path'); 
+const path = require('path');
 
 const config = {
-    entry:{dll:['react','react-dom','react-router-dom','react-redux','redux','whatwg-fetch','classnames']},
-    output:{
-        filename:'[name].js',
-        path:path.resolve('public')
+    entry: {
+        dll: [
+            'react',
+            'react-dom',
+            'react-router-dom',
+            'react-redux',
+            'redux',
+            'whatwg-fetch',
+            'classnames'
+        ]
     },
-    plugins:[
+    output: {
+        filename: '[name].js',
+        path: path.resolve('public'),
+        library: '[name]'
+    },
+    plugins: [
         new webpack.DefinePlugin({
-            PRODUCTION: JSON.stringify('production')
+            'process.env.NODE_ENV': JSON.stringify(
+                process.env.NODE_ENV || 'production'
+            )
         }),
         new webpack.DllPlugin({
-            context:__dirname,
-            name:'[name]',
-            path:path.join(__dirname, "manifest.json"),
+            context: __dirname,
+            name: '[name]',
+            path: path.join(__dirname, 'manifest.json')
         }),
         new UglifyJsPlugin()
     ]
-}
+};
 
 module.exports = config;
