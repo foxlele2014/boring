@@ -33,27 +33,12 @@ const getAliasObj = () => {
 const config = {
     entry: [
         path.resolve('resource/renderer.js'),
-        'react-hot-loader/patch', // 开启react代码的模块热替换（HMR）
-        'webpack-dev-server/client?http://localhost:8181',
-        // 为webpack-dev-server的环境打包好运行代码
-        // 然后连接到指定服务器域名与端口
-        'webpack/hot/only-dev-server'
-        // 为热替换（HMR）打包好运行代码
-        // only- 意味着只有成功更新运行代码才会执行热替换（HMR）
     ],
     output: {
         filename: 'bundle.js',
         path: path.resolve('public'),
-        publicPath: '/'
-        // 对于热替换（HMR）是必须的，让webpack知道在哪里载入热更新的模块（chunk）
     },
     devtool: 'eval-source-map',
-    devServer: {
-        hot: true,
-        contentBase: path.resolve('public'), // 输出文件的路径
-        compress: true
-        // port: 9000
-    },
     resolve: {
         modules: ['node_modules'],
         extensions: ['.js', '.json', '.jsx', '.less'],
@@ -71,7 +56,6 @@ const config = {
                         options: {
                             presets: ['env', 'react'],
                             plugins: [
-                                'react-hot-loader/babel' ,// 开启react代码的模块热替换（HMR）
                                 'transform-runtime',
                                 'syntax-dynamic-import',
                                 'preval',
@@ -110,11 +94,6 @@ const config = {
         ]
     },
     plugins: [
-        // 开启全局的模块热替换（HMR）
-        new webpack.HotModuleReplacementPlugin(),
-        // 当模块热替换（HMR）时在浏览器控制台输出对用户更友好的模块名字信息
-        new webpack.NamedModulesPlugin(),
-
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(
                 process.env.NODE_ENV || 'development'
@@ -124,11 +103,6 @@ const config = {
             context: __dirname,
             manifest: require('./manifest.json')
         })
-        // new HtmlWebpackPlugin({
-        //     title:'elec-dictionary',
-        //     filename:'../resource/index.html',
-
-        // })
     ]
 };
 

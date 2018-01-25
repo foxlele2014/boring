@@ -11,8 +11,17 @@ class AutoComplete extends React.Component {
     }
 
     render() {
-        //list还是使用reactnode比较实际
-        const { list, placeholder, className } = this.props;
+        //list还是使用reactnode比较实际，
+        //参考了antd的之后，感觉使用可以使用两个数据源，一个是自定义一个是默认的
+        //children，datasource（使用默认展示）
+        const {
+            dataSource,
+            children,
+            placeholder,
+            onChange,
+            onSearch,
+            onSelect
+        } = this.props;
         return (
             <div className="autocomplete-wrapper">
                 <div className="input-wrapper">
@@ -31,8 +40,12 @@ class AutoComplete extends React.Component {
 }
 
 AutoComplete.PropTypes = {
-    list: PropTypes.node,
-    placeholder:PropTypes.string
+    children: PropTypes.node,
+    dataSource: PropTypes.array,
+    placeholder: PropTypes.string,
+    onChange: PropTypes.func,
+    onSearch: PropTypes.func,
+    onSelect: PorpTypes.func
 };
 
 export default AutoComplete;

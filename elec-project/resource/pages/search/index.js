@@ -1,7 +1,7 @@
 export default {
     '/search': {
-        model: './model',
-        reducers: './reducers',
-        component: './view'
+        modal: () => import('./modal'),
+        reducers: () => import('./reducers'),
+        component: () => import('./view')
     }
 };

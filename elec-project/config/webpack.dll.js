@@ -11,7 +11,9 @@ const config = {
             'react-redux',
             'redux',
             'whatwg-fetch',
-            'classnames'
+            'classnames',
+            'antd',
+            'prop-types'
         ]
     },
     output: {

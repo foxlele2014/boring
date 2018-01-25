@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import AutoComplete from '@components/AutoComplete';
+import { AutoComplete } from 'antd';
 import * as actions from './actions';
+
+const Option = AutoComplete.Option;
 
 class Search extends React.Component {
     constructor(props) {
@@ -14,6 +16,14 @@ class Search extends React.Component {
     getNotes() {}
     getRelation() {}
     addToNotes() {}
+
+    renderOptions(options) {
+        return options.map((opt,i) => {
+            return (
+                <Option key={i}></Option>
+            )
+        })
+    }
 
     render() {
         return (
