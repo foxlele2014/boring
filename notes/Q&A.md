@@ -117,6 +117,9 @@ location.key unique identifier for this location
 
 > [yeoman.io](http://yeoman.io/authoring/)
 
+- metalsmith
+- [node写脚手架](https://juejin.im/post/5a31d210f265da431a43330e)
+
 
 
 ### 项目：（思考方向）
