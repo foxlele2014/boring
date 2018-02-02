@@ -14,7 +14,6 @@
 
 - 以双下划线开头的 `__foo` 代表类的私有成员；以双下划线开头和结尾的 `__foo__` 代表 Python 里特殊方法专用的标识，如 `__init__()` 代表类的构造函数。
 
-------------------
 
 # tutorial record
 
@@ -27,3 +26,92 @@
 - 写`xxx.py`文件，`python3 xxx.py`
 - 或者`xxx.py`里写入用于解析该文件的解析器`#!/usr/local/bin/python3`,然后`chmod +x xxx.py`,之后`./xxx.py`就可以执行啦~
 - [chmod](http://man.linuxde.net/chmod)
+
+
+### 保留字（恩，这里只是为了练习表格的书写，恩，可以用html来写的）
+
+1 | 2 | 3 | 4| 5|6
+------ | ------ | ------ | ------ | ------ | ------
+and | exec | not | assert | finally | or
+break | for | pass | class | from | print
+continue | global | raise | def | if | return
+del | import | try | elif | in | while | else
+is | with | except | lamdba | yield 
+
+
+<table class="table table-bordered table-striped table-condensed">
+    <tr>
+        <td>北京</td>
+    	<td>雾霾</td>
+    </tr>
+    <tr>
+        <td>深圳</td>
+    <td>暴雨</td>
+    </tr>
+</table>
+
+### 其他
+
+- 单引号，双引号，三引号
+- 注释 # 
+
+``` python
+
+word = 'aaa';
+word = "bbb";
+word = '''aaa''';
+word = """bbb""";
+
+# aaaaa
+
+'''
+aaaaa
+bbbbbb
+dddd
+'''
+
+'''
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+这是多行注释，使用单引号。
+'''
+
+"""
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+这是多行注释，使用双引号。
+"""
+	
+
+```
+
+
+### 类型
+- number(int,long,float,complex)
+- string
+- list (['xxx','222']
+- tuple('xxx','xxxx')只读列表
+- dictionary{'dxxx':'111'}
+- [数据类型](http://www.runoob.com/python/python-variable-types.html)
+
+### 运算符
+
+对比js多了这两个
+
+- ** 幂运算 如：`a**b`
+- // 取整除 - 返回商的整数部分
+
+- [运算符](http://www.runoob.com/python/python-operators.html)
+
+### 函数 
+- def 定义
+
+``` python 
+def fn() :
+	print '1'
+	return ;
+
+```
+
+
+
