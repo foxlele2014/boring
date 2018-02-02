@@ -1,7 +1,0 @@
-export default {
-    SEARCH: 'SEARCH',
-    SAVE: 'SAVE',
-    GETNOTES: 'GETNOTES',
-    ADDTONOTE: 'ADDTONOTE',
-    GETVOICE: 'GETVOICE'
-};
